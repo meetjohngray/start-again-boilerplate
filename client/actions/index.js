@@ -1,18 +1,18 @@
-import { getFruits } from '../apis/fruits'
+import { getQuotes } from '../apis/quotes'
 
-export const SET_FRUITS = 'SET_FRUITS'
+export const SET_QUOTES = 'SET_QUOTES'
 
-export function setFruits(fruits) {
+export function setQuotes(quotes) {
   return {
-    type: SET_FRUITS,
-    payload: fruits,
+    type: SET_QUOTES,
+    payload: quotes,
   }
 }
 
-export function fetchFruits() {
+export function fetchQuotes() {
   return (dispatch) => {
-    return getFruits().then((fruits) => {
-      dispatch(setFruits(fruits))
+    return getQuotes().then((quotes) => {
+      dispatch(setQuotes(quotes))
     })
   }
 }

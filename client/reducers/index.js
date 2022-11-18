@@ -1,7 +1,7 @@
 import { combineReducers } from 'redux'
 
-import fruits from './fruits'
+import quotes from './quotes'
 
 export default combineReducers({
-  fruits,
+  quotes,
 })

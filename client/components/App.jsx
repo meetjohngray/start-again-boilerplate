@@ -1,24 +1,24 @@
 import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 
-import { fetchFruits } from '../actions'
+import { fetchQuotes } from '../actions'
 
 function App() {
-  const fruits = useSelector((state) => state.fruits)
+  const quotes = useSelector((reduxState) => reduxState.quotes)
   const dispatch = useDispatch()
   useEffect(() => {
-    dispatch(fetchFruits())
+    dispatch(fetchQuotes())
   }, [])
 
   return (
     <>
       <div className="app">
-        <h1>Fullstack Boilerplate - with Fruits!</h1>
-        <ul>
-          {fruits.map((fruit) => (
-            <li key={fruit}>{fruit}</li>
+        <h1>Start Again</h1>
+          {quotes.map((quote) => (
+            <div key={quote.id}>
+              <blockquote>{quote.text}</blockquote>
+            </div>
           ))}
-        </ul>
       </div>
     </>
   )
