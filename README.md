@@ -1,4 +1,4 @@
-# Boilerplate: Fullstack
+# Start Again
 
 ## Setup
 
@@ -6,30 +6,19 @@
 
 This repo includes:
 
-* a single, simple API endpoint (`/api/v1/fruits`)
+* a single, simple API endpoint (`/api/v1/quotes`)
 * a single React component (`<App />`)
-* an example database module (`server/db/fruits.js`)
-* an API client module (`client/apis/fruits.js`)
+* an example database module (`server/db/quotes.js`)
+* an API client module (`client/apis/quotes.js`)
 * configuration for Jest and testing library
 * configuration for server-side debugging in VS Code
 * a single client-side test (`client/components/App.test.js`)
 
-### Installation
-
-#### **From the Github UI**
-
-See the instructions [here](https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/creating-a-repository-from-a-template) to use Github's feature to create a new repo from a template.
-
-#### **From the command line**
-
-```
-git clone https://github.com/dev-academy-challenges/boilerplate-fullstack [your-project-name]
-cd [your-project-name]
-npm install # to install dependencies
-npm run dev # to start the dev server
-```
-
-You can find the server running on [http://localhost:3000](http://localhost:3000).
-
----
-[Provide feedback on this repo](https://docs.google.com/forms/d/e/1FAIpQLSfw4FGdWkLwMLlUaNQ8FtP2CTJdGDUv6Xoxrh19zIrJSkvT4Q/viewform?usp=pp_url&entry.1958421517=boilerplate-fullstack)
+## User Stories
+1. When the page loads, I want to see a beautiful photograph fade-in
+2. After a few seconds, I want a thought-provoking quote to fade-in overlaid on the photo. The quotes will come from a local database.
+3. After a few more seconds, I want the question "How do you want to start you day?" to fade in. This will have a drop down that the user can select from to choose mindfulness or journaling
+  - Selecting mindfulness should direct me to a page containing a meditation timer where the user can select how long they want to meditate. The timer will count down and ring with a pleasing tone when it reaches zero.
+  - Selecting journaling should lead the user to a page where they can write a journal entry that will be stored in a local database
+4. The top-right corner of the page should display the weather. The location can be pre-determined for MVP
+5. The design should be mobile first: optimised from a tablet perspective.
