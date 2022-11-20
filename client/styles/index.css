@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Overpass+Mono&display=swap');
 
 /**
  * This injects Tailwind's base styles and any base styles registered by
@@ -33,19 +32,5 @@
     @apply text-2xl;
     font-family: 'Rubik Mono One', sans-serif;
   }
-  h2 {
-    @apply text-xl;
-    font-family: 'Rubik Mono One', sans-serif;
-  }
 }
 
-@layer components {
-  .btn-blue {
-    @apply bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded;
-  }
-}
-
-html, 
-body {
-  font-family: 'Overpass Mono', monospace;
-}

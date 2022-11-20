@@ -9,3 +9,11 @@ tags
 # Ignore test-related files
 /coverage.data
 /coverage/
+coverage/*
+
+# Ignore tailwind files
+server/public/styles.css
+server/public/styles.css.map
+
+# Ignore MacOS DS Store
+.DS_Store

@@ -12,16 +12,12 @@ function App() {
 
   return (
     <>
-      <div className="app">
-        <h1>Start Again</h1>
-        {quotes.map((quote) => (
-          <div key={quote.id}>
-            <ul style={{ listStyleType: 'none' }}>
-              <li>{quote.text}</li>
-            </ul>
-          </div>
-        ))}
-      </div>
+      <h1>Start Again</h1>
+      {quotes.map((quote) => (
+        <div key={quote.id}>
+          <li style={{ listStyleType: 'none' }}>{quote.text}</li>
+        </div>
+      ))}
     </>
   )
 }
