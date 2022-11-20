@@ -14,11 +14,13 @@ function App() {
     <>
       <div className="app">
         <h1>Start Again</h1>
-          {quotes.map((quote) => (
-            <div key={quote.id}>
-              <blockquote>{quote.text}</blockquote>
-            </div>
-          ))}
+        {quotes.map((quote) => (
+          <div key={quote.id}>
+            <ul style={{ listStyleType: 'none' }}>
+              <li>{quote.text}</li>
+            </ul>
+          </div>
+        ))}
       </div>
     </>
   )
