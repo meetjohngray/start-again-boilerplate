@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
 /**
  * This injects Tailwind's base styles and any base styles registered by
  * plugins.
@@ -29,8 +28,8 @@
 
 @layer base {
   h1 {
-    @apply text-2xl;
-    font-family: 'Rubik Mono One', sans-serif;
+    @apply text-6xl;
+    font-family: 'Rubik', sans-serif;
   }
 }
 
