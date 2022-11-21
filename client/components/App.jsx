@@ -1,7 +1,8 @@
 import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-
 import { fetchQuotes } from '../actions'
+
+import Example from './Example'
 
 function App() {
   const quotes = useSelector((reduxState) => reduxState.quotes)
@@ -19,6 +20,7 @@ function App() {
             <li style={{ listStyleType: 'none' }}>{quote.text}</li>
           </div>
         ))}
+        <Example />
       </div>
     </>
   )
