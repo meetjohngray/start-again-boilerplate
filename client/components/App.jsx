@@ -16,7 +16,7 @@ function App() {
         <h1>Start Again</h1>
         {quotes.map((quote) => (
           <div className="my-4" key={quote.id}>
-            <li style={{ listStyleType: 'none' }}>{quote.text}</li>
+            <li style={{ listStyleType: 'none' }}>{quote.text} - {quote.name} </li>
           </div>
         ))}
       </div>
