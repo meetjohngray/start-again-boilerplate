@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import { fetchQuotes } from '../actions'
 
 import Example from './Example'
+import Unsplash from './Unsplash'
 
 function App() {
   const quotes = useSelector((reduxState) => reduxState.quotes)
@@ -21,6 +22,7 @@ function App() {
           </div>
         ))}
         <Example />
+        <Unsplash />
       </div>
     </>
   )
